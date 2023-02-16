@@ -1,0 +1,71 @@
+.tradingCardContainer{
+    background: var(--white-4);
+    border-radius: var(--border-radius);
+    // height: 50px;
+    margin-top: 10px;
+    padding: 20px 10px;
+    flex: 1;
+    // min-width:fit-content;
+    // min-width: -moz-fit-content;
+    // overflow: auto;
+    .itemContainer{
+        display: flex;
+        align-items: center;
+            .priceLabel{
+                color: var(--grey-6);
+                font-weight: var(--font-medium);
+                font-size: var(--xx-small);
+            }
+            .priceText{
+                color: var(--blue-5);
+                font-weight: var(--font-medium);
+                font-size: var(--small);
+            }
+            .priceTextRed{
+                color: var(--red-1);
+                font-weight: var(--font-medium);
+                font-size: var(--small);
+            }
+            .priceTextGreen{
+                color: var(--green-2);
+                font-weight: var(--font-medium);
+                font-size: var(--small);
+            }
+            .changeSpanFlex{
+                max-width: fit-content;
+                min-width: unset;
+            }
+        // }
+     .buysellButtons{
+        display: flex;
+        align-items: center;
+        min-width: 80px;
+        margin-left: 10px;
+        flex: 1;
+         .buyButton{
+             max-width: 55px;
+             height: 40px;
+             flex: 1;
+             margin-right: 10px;
+         }
+         .sellButton{
+            background: var(--green-3);
+            border: 1px solid var(--green-3);
+             max-width: 55px;
+             height: 40px;
+             flex: 1;
+         }
+         .sellText{
+            color: var(--white-1);
+          }
+     }
+        .buyButtonHidden{
+          visibility: hidden;
+          max-width: 96px;
+          height: 40px;
+          flex: 1;
+        }
+    }
+}
+
+ 

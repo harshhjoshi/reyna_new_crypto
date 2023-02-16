@@ -1,0 +1,95 @@
+.dragDropFileContainerActive{
+    display: flex;
+    margin-top: 25px;
+    .uploadOrDragDrop{
+        margin-left: 20px;
+        .clickToUpload{
+            color: var(--blue-1);
+            font-size: var(--medium);
+            font-weight: var(--font-semibold);
+            cursor: pointer;
+        }
+        .validFileTypes{
+            margin-top: 3px;
+            color: var(--grey-2);
+            font-size: var(--small);
+            font-weight: var(--font-normal);
+        }
+    }
+}
+.dragDropFileContainerActiveClick{
+    display: flex;
+    margin-top: 25px;
+    border: var(--border);
+    .uploadOrDragDrop{
+        margin-left: 20px;
+        // display: none;
+        .clickToUpload{
+            color: var(--blue-1);
+            font-size: var(--medium);
+            font-weight: var(--font-semibold);
+            cursor: pointer;
+        }
+        .validFileTypes{
+            margin-top: 3px;
+            color: var(--grey-2);
+            font-size: var(--small);
+            font-weight: var(--font-normal);
+        }
+    }
+}
+.dragDropFileContainerDeactive{
+    display: flex;
+    margin-top: 25px;
+    .uploadOrDragDrop{
+        margin-left: 20px;
+        .clickToUpload{
+            color: var(--blue-5);
+            font-size: var(--medium);
+            font-weight: var(--font-medium);
+            cursor: pointer;
+        }
+        .validFileTypes{
+            margin-top: 3px;
+            color: var(--grey-4);
+            font-size: var(--small);
+            font-weight: var(--font-normal);
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .dragDropFileContainerActive{
+        .uploadOrDragDrop{
+            margin-left: 20px;
+            .dragDrop{
+                margin-left:3px;
+                color: var(--grey-2);
+                font-size: var(--medium);
+                font-weight: var(--font-semibold);
+            }
+          
+        }
+    }
+    .dragDropFileContainerDeactive{
+        .uploadOrDragDrop{
+            margin-left: 20px;
+            .dragDrop{
+                margin-left:3px;
+                color: var(--grey-4);
+                font-size: var(--medium);
+                font-weight: var(--font-medium);
+            }
+        }
+    }
+    .dragDropFileContainerActiveClick{
+        .uploadOrDragDrop{
+            margin-left: 20px;
+            .dragDrop{
+                margin-left:3px;
+                color: var(--grey-2);
+                font-size: var(--medium);
+                font-weight: var(--font-semibold);
+            }
+        }
+    }
+}

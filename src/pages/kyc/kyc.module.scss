@@ -1,0 +1,197 @@
+.spinner{
+  margin: 30% auto 0% auto;
+}
+.kycContainer{
+    height: 100%;
+    width: 90%;
+    margin: 30% auto 0% auto;
+    .kycDocumentTitle{
+        color: var(--blue-1);
+        font-size: var(--xxxx-large);
+        font-weight: var(--font-bold);
+    }
+    .requiredDocumentText{
+        margin-top: 5px;
+        color: var(--blue-1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+    }
+    .divider{
+        margin-top: 20px;
+        width: 100%;
+        background: var(--white-2);
+        height: 2px;
+    }
+    .uploadDocumentsForm{
+        height: 100%;
+        .formFieldContainerActive{
+            margin-top: 30px;
+            display: flex;
+            align-items: flex-start;
+            .documentDetails{
+                margin-left: 30px;
+                width: 100%;
+                margin-top: 4px;
+                .documentType{
+                    display: flex;
+                    flex-direction: column;
+                    .documentTypeText{
+                        color: var(--blue-1);
+                        font-size: var(--x-large);
+                        font-weight: var(--font-semibold);
+                        &::after{
+                            content: '*';
+                            color: var(--red-1);
+                            // left: 10px;
+                        }
+                    }
+                    .documentTypeSubText{
+                        color: var(--blue-1);
+                        font-size: var(--small);
+                        font-weight: var(--font-medium);
+                    }
+                }
+                .error{
+                    color: var(--red-1);
+                    font-size: var(--x-small);
+                    font-weight: var(--font-normal);
+                    margin-top: 10px;
+                  }
+            }
+            .inputFieldContainer{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: relative;
+                margin-top: 25px;
+                .label {
+                    color: var(--blue-5);
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                    // line-height: 30px;
+                  }
+                .inputField {
+                  height: 40px;
+                  width: unset;
+                  border: var(--border);
+                  border-radius: 6px;
+                  padding-left: 15px;
+                  color: var(--blue-5);
+                  // flex: 1;
+                  margin-top: 5px;
+                //   width: 50%;
+                  &::placeholder {
+                    color: var(--grey-1);
+                    font-size: var(--medium);
+                    font-weight: var(--font-medium);
+                    margin: 5px;
+                  }
+                }
+              }
+        }
+        .formFieldContainerDeactive{
+            margin-top: 30px;
+            display: flex;
+            align-items: flex-start;
+            .documentDetails{
+                margin-left: 30px;
+                width: 100%;
+                margin-top: 4px;
+                .documentType{
+                    display: flex;
+                    flex-direction: column;
+                    .documentTypeText{
+                        color: var(--grey-4);
+                        font-size: var(--x-large);
+                        font-weight: var(--font-medium);
+                        &::after{
+                            content: '*';
+                            color: var(--grey-4);
+                            // left: 10px;
+                        }
+                    }
+                    .documentTypeSubText{
+                        color: var(--grey-4);
+                        font-size: var(--small);
+                        font-weight: var( --font-normal);
+                    }
+                }
+                .error{
+                    color: var(--red-1);
+                    font-size: var(--x-small);
+                    font-weight: var(--font-normal);
+                    margin-top: 10px;
+                  }
+            }
+            .inputFieldContainer{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: relative;
+                margin-top: 25px;
+                .label {
+                    color: var(--grey-4);
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                    // line-height: 30px;
+                  }
+                .inputField {
+                  height: 40px;
+                  width: unset;
+                  border: var(--border);
+                  border-radius: 6px;
+                  padding-left: 15px;
+                  color: var(--grey-1);
+                  // flex: 1;
+                  margin-top: 5px;
+                //   width: 50%;
+                  &::placeholder {
+                    color: var(--grey-1);
+                    font-size: var(--medium);
+                    font-weight: var(--font-medium);
+                    margin: 5px;
+                  }
+                }
+               
+              }
+        }
+        .sendDocButton{
+            width: 100%;
+            padding: 12px 0px;
+            margin: 50px 0px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+  .spinner{
+    margin: 7.5% auto 0% auto;
+  }
+    .kycContainer{
+        width: 50%;
+        margin: 7.5% auto 0% auto;
+        .divider{
+            margin-top: 30px;
+        }
+        .uploadDocumentsForm{
+            margin-top: 35px;
+            margin-bottom: 35px;
+            .formFieldContainerActive{      
+                .inputFieldContainer{
+                    .inputField {
+                      width: 50%;
+                    }
+                  }
+            }
+            .formFieldContainerDeactive{
+                .inputFieldContainer{
+                    .inputField {
+                      width: 50%;
+                    }     
+                  }
+            }
+            .sendDocButton{
+                width: 311px;
+            }
+        }
+    }
+}

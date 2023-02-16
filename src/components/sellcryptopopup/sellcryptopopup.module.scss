@@ -1,0 +1,102 @@
+.sellCryptoPopupContainer {
+    width: 95%;
+    background: var(--white-1);
+    min-height: 100%;
+    overflow-y: auto;
+    border-radius: var(--border-radius);
+    .sellCryptoFormContainer {
+      width: 90%;
+      margin: 5% auto 5% auto;
+      .title {
+        color: var(--blue-1);
+        font-size: var(--xxxx-large);
+        font-weight: var(--font-bold);
+      }
+      .divider {
+        margin-top: 25px;
+        height: 2px;
+        background: var(--white-2);
+        width: 100%;
+      }
+      .sellCryptoForm {
+        margin-top: 20px;
+        .formFieldContainer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .formField {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              // width: 200px;
+              margin-right: 10px;
+              margin-top: 10px;
+              // &:last-of-type {
+              //   margin-right: unset;
+              // }
+              .label {
+                color: var(--blue-5);
+                font-size: var(--small);
+                font-weight: var(--font-medium);
+              }
+              .inputField {
+                margin-top: 10px;
+                border: var(--border);
+                border-radius: 6px;
+                padding: 11px;
+                color: var(--blue-5);
+                &::placeholder {
+                  color: var(--grey-1);
+                  font-size: var(--small);
+                  font-weight: var(font-medium);
+                  margin: 5px;
+                }
+              }
+              .error{
+                color: var(--red-1);
+                font-size: var(--x-small);
+                font-weight: var(--font-normal);
+                margin-top: 10px;
+              }
+            }
+        }
+        .counterMessageContainer{
+          margin-top: 20px;
+          .counterMessage{
+              color: var(--grey-2);
+              font-size: var(--small);
+              font-weight: var(--font-normal);
+              .counter{
+                  color: var(--blue-1);
+                  font-weight: var(--font-semibold);
+              }
+          }
+        }
+        .sellButton{
+            background: var(--green-3);
+            border: 1px solid var(--green-3);
+        }
+        .sellText{
+            color: var(--white-1);
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .sellCryptoPopupContainer {
+      width: 50%;
+      .sellCryptoFormContainer {
+        width: 80%;
+        .sellCryptoForm {
+            .formFieldContainer{        
+             flex-direction: row;
+              .formField {
+                width: 250px;
+              }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,81 @@
+.kycApprovalContainer{
+    width: 95%;
+    background: var(--white-1);
+    min-height: 100%;
+    overflow-y: auto;
+    border-radius: var(--border-radius);
+    .kycApprovalFomContainer{
+        width: 90%;
+        margin: 5% auto 5% auto;
+        .kycApproval{
+            color: var(--blue-1);
+            font-size: var(--xxxx-large);
+            font-weight: var(--font-bold);
+        }
+        .divider{
+            margin-top: 25px;
+            height: 2px;
+            background: var(--white-2);
+            width: 100%;
+        }
+        .kycApprovalMessageContainer{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            .approvalMessage{
+                margin-left: 20px;
+                color: var(--blue-5);
+                font-size: var(--x-large);
+                font-weight: var(--font-semibold);
+            }
+        }
+        .kycApprovalForm{
+            margin-top: 30px;
+            .formField{
+                display: flex;
+                flex-direction: column;
+                .label{
+                    color: var(--blue-5);
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                }
+                .textAreaField{
+                    margin-top: 10px;
+                    border: var(--border);
+                    border-radius: 6px;
+                    padding: 11px;
+                    color: var(--blue-5);
+                    &::placeholder {
+                        color: var(--grey-1);
+                        font-size: var(--small);
+                        font-weight: var(font-medium);
+                        margin: 5px;
+                      }
+                }
+            }
+            .buttonsFlex{
+                margin-top: 30px;
+                display: flex;
+                .submitButton{
+                    // width: 50%;  
+                    flex: 1;
+                }
+                .cancelButton{
+                    flex: 1;
+                    width: 50%;
+                    background: var(--grey-3);
+                    margin-left: 15px;
+                    border: 2px solid var(--grey-3);
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .kycApprovalContainer{
+        width: 50%;
+        .kycApprovalFomContainer{
+            width: 80%;
+        }
+    }
+}

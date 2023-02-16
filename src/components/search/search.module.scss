@@ -1,0 +1,30 @@
+.searchFormContainer{
+    position: relative;
+    width: 100%;
+    .searchIcon{
+        position: absolute;
+        top: 14px;
+        left: 16px;
+    }
+    .searchInputField{
+        width: 70% ;
+        background: var(--white-1);
+        border: var(--border);
+        border-radius: 6px;
+        padding: 16px 0px 16px 45px ;
+        flex: 1;
+        &::placeholder {
+            color: var(--grey-1);
+            font-size: var(--small);
+            font-weight: var(--font-normal);
+            margin: 5px;
+          }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .searchFormContainer{
+        .searchInputField{
+            width: 85% ;
+        }
+    }
+}

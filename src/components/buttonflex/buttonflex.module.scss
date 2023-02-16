@@ -1,0 +1,27 @@
+.buttonsFlex{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    .submitButton{
+        // width: 50%;  
+        flex: 1;
+        width: 140px;
+    }
+    .cancelButton{
+        flex: 1;
+        width: 140px;
+        background: var(--grey-3);
+        margin-left: 15px;
+        border: 2px solid var(--grey-3);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .buttonsFlex{
+        .submitButton{
+            flex: unset;
+        }
+        .cancelButton{
+            flex: unset;
+        }
+    }
+}

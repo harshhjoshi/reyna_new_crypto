@@ -1,0 +1,138 @@
+.otpVerificationContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  .otpVerificationFormContainer {
+    background: var(--white-1);
+    border-radius: var(--border-radius);
+    width: 80%;
+    margin: 10% 0% 10% 0%;
+    align-self: center;
+    .otpVerificationForm {
+      width: 100%;
+      .otpVerificationText {
+        color: var(--blue-1);
+        font-weight: var(--font-bold);
+        font-size: var(--xxxx-large);
+        margin-top: 10px;
+      }
+      .otpVerificationTitle {
+        color: var(--blue-1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        margin-top: 10px;
+      }
+      .otpVerificationFormBody {
+        .otpFieldBoxContainer {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 70px;
+          flex-wrap: wrap;
+          .otpFieldBox {
+            width: 40px;
+            border: none;
+            font-size: var(--xxxx-large);
+            text-align: center;
+            border-bottom: 2px solid var(--grey-1);
+          }
+          & input:focus {
+            outline: none;
+          }
+        }
+        .error {
+          color: var(--red-1);
+          font-size: var(--x-small);
+          font-weight: var(--font-normal);
+          margin-top: 10px;
+        }
+        .verifyButton {
+          width: 100%;
+          margin: 40px 0px 20px 0px;
+        }
+      }
+      .otpStatusTimeLine {
+        .attemptsCount {
+          color: var(--grey-2);
+          font-size: var(--small);
+          font-weight: var(--font-semibold);
+        }
+        .secondsRemaining {
+          color: var(--grey-2);
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+        }
+      }
+      .divider {
+        width: 100%;
+        height: 1px;
+        background: var(--white-3);
+        margin-top: 10px;
+      }
+      .didNotReceivedCode {
+        margin-top: 9px;
+        .receiveCodeText {
+          color: var(--grey-2);
+          font-size: var(--small);
+          font-weight: var(--font-normal);
+        }
+        .resendLink {
+          color: var(--blue-1);
+          font-size: var(--small);
+          font-weight: var(--font-semibold);
+          margin-left: 5px;
+          // border-bottom: 1px solid var(--blue-1);
+          text-decoration: underline;
+          text-decoration-color: var(--blue-1);
+          cursor: pointer;
+        }
+      }
+      .warning {
+        margin-top: 30px;
+        background: var(--red-2);
+        font-size: var(--medium);
+        text-align: start;
+        padding: 15px 0px 20px 15px;
+        color: var(--yellow-2);
+        border: 1px solid var(--red-3);
+        border-radius: 6px;
+      }
+    }
+  }
+  .arrowFrame {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .otpVerificationContainer {
+    justify-content: center;
+    background-image: url("../../assets/images/ArrowFrameBlue.png");
+    background-color: var(--blue-1);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+    min-height: 100%;
+    .otpVerificationFormContainer {
+      box-shadow: var(--box-shadow);
+      width: 42%;
+      .otpVerificationForm {
+        width: 80%;
+        margin: 10% auto 10% auto;
+        .otpVerificationText {
+          margin-top: 15px;
+        }
+        .otpVerificationFormBody {
+          .otpFieldBoxContainer {
+            .otpFieldBox {
+              width: 42px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

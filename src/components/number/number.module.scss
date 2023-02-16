@@ -1,0 +1,32 @@
+.numberContainer{
+    .numberRound{
+        height: 50px;
+        width: 50px;
+        border: 1px solid var(--blue-1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .number{
+            color: var(--black-1);
+            font-size: var(--x-large);
+            font-weight: var(--font-normal);
+        }
+    }
+    .numberRoundDeactive{
+        height: 50px;
+        width: 50px;
+        border: 1px solid var(--grey-4);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .number{
+            color: var(--grey-4);
+            font-size: var(--x-large);
+            font-weight: var(--font-normal);
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+}

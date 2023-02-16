@@ -1,0 +1,110 @@
+.transacSuccessContainer {
+    width: 95%;
+    background: var(--white-1);
+    min-height: 100%;
+    overflow-y: auto;
+    border-radius: var(--border-radius);
+    .transacSuccessContent{
+        width: 90%;
+        margin: 5% auto 5% auto;
+        .transacSuccessMessageContainer{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .transactionMessageId{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                text-align: center;
+                align-items: center;
+                .transacSuccessMessage{
+                    color: var(--blue-5);
+                    font-size: var(--x-large);
+                    font-weight: var( --font-semibold);
+                    .coinName{
+                        color: var(--blue-1);
+                        // margin: 0px 3px;
+                    }
+                }
+                .transacIdContainer{
+                    color: var(--blue-5);
+                    font-size: var(--x-large);
+                    font-weight: var( --font-semibold);
+                    margin-top: 20px;
+                    display: inline-block;
+                    max-width: 250px;
+                    overflow-wrap: break-word;
+                    // text-align: ce;
+                    .transacId{
+                        color: var(--blue-1);
+                    }
+                }
+            }
+        }
+        .divider {
+            margin-top: 25px;
+            height: 2px;
+            background: var(--white-2);
+            width: 100%;
+          }
+        //   .statusContainer{
+        //     // margin-top: 30px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     // flex-wrap: wrap;
+        //     .textLabelContainer{
+        //         flex: 1;
+        //         margin-right: unset;
+        //         // width: 167px;
+        //         // align-items: flex-end;
+        //         // margin-top: 30px;
+        //         margin-top: 30px;
+        //         .textLabelBox{
+        //             background: var(--green-3);
+        //             width: unset;
+        //             padding: 15px 0px;
+        //             text-align: center;
+        //             border: 1px solid var(--green-3);
+        //             .address{
+        //                 color: var(--white-1);
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .transacSuccessContainer {
+      width: 60%;
+      .transacSuccessContent{
+        width: 90%;
+        .transacSuccessMessageContainer{
+            flex-direction: row;
+            .transactionMessageId{
+                margin-left: 20px;
+                margin-top: unset;
+                text-align: unset;
+                align-items: unset;
+                .transacIdContainer{
+                    margin-top: unset;
+                    display: inline-block;
+                    max-width: unset;
+                    overflow-wrap: unset;
+                }
+            }
+        }
+        // .statusContainer{
+        //     // display: flex;
+        //     // margin-top: 30px;
+        //     align-items: center;
+        //     flex-wrap: wrap;
+        //     flex-direction: row;
+        //     .textLabelContainer{
+        //         // margin-top: unset;
+        //         flex: unset;
+        //     }
+        // }
+      }
+    }
+  }
+  

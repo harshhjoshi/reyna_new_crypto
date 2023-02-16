@@ -1,0 +1,98 @@
+.tabContainer{
+    display: flex;
+    min-width: 100%;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; 
+      scrollbar-width: none;
+    .tabs{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        min-width: fit-content;
+        // width: 100%;
+        &:last-of-type{
+            margin-right: 20px;
+        }
+        .tab{
+            margin-left: 10px;
+            color: var(--grey-1);
+            font-size: var(--medium);
+            // min-width: 70px;
+            font-weight: var(--font-medium);
+        }
+    }
+    .tabsActive{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: fit-content;
+        background: var(--white-10);
+        // width: 100%;
+        cursor: pointer;
+        
+        border-radius: 5px 5px 0px 0px;
+        height: 54px;
+        width: 120px;
+        &:last-of-type{
+            margin-right: 20px;
+        }
+        .tab{
+            margin-left: 10px;
+            color: var(--blue-1);
+            font-size: var(--medium);
+            // min-width: 70px;
+            font-weight: var(--font-semibold);
+        }
+    }
+} 
+@media only screen and (min-width: 768px) {
+    .tabContainer{
+        // display: flex;
+        width: unset;
+        overflow: unset;
+        .tabs{
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:last-of-type{
+                margin-right: unset;
+            }
+            .tab{
+                margin-left: 10px;
+                color: var(--grey-1);
+                font-size: var(--medium);
+                // min-width: unset;
+                font-weight: var(--font-medium);
+            }
+        }
+        .tabsActive{
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: var(--white-10);
+            border-radius: 5px 5px 0px 0px;
+            height: 54px;
+            width: 120px;
+            &:last-of-type{
+                margin-right:unset;
+            }
+            .tab{
+                margin-left: 10px;
+                color: var(--blue-1);
+                font-size: var(--medium);
+                font-weight: var(--font-semibold);
+                // min-width: unset;
+            }
+        }
+    }   
+}

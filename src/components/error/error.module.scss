@@ -1,0 +1,25 @@
+.error{
+    margin-top: 25px        ;
+    background: var(--red-4);
+    border: 1px solid var(--red-5);
+    border-radius: 6px;
+    text-align: start;
+    padding: 16px;
+    color: var(--red-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-medium);
+    .verifyOTP{
+        cursor: pointer;
+        display: inline-block;
+        width: 150px;   
+        text-align: center;
+        color: var(--blue-1);
+        background: var(--white-1) !important;
+        background:1px solid var(--white-1);
+        border-radius: 6px;
+        padding: 15px 0px;
+        font-size: var(--small);
+    }
+}

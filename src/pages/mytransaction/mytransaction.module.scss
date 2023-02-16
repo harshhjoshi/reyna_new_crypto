@@ -1,0 +1,83 @@
+.myTransactionContainer {
+    //  min-height: 100%;
+      width: 90%;
+      margin: 30% auto 50px auto;
+      .norecordFound{
+        margin-top: 30px;
+      }
+      .myTransactionTitle{
+        color: var(--blue-1);
+        font-size: var(--xxxx-large);
+        font-weight: var(--font-bold);
+    }
+    .getAllInfoText{
+        margin-top: 5px;
+        color: var(--blue-1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+    }
+      .divider {
+        margin-top: 30px;
+        width: 100%;
+        background: var(--white-2);
+        height: 2px;
+      }
+      // .tabs{
+      //   margin-top: 30px;
+      // }
+      // .tableContainer{
+      //   margin-top: 30px;
+      // }
+      .tableHeadRow{
+        height: 50px !important; 
+        // background: unset !important;
+      }
+      .tableHead{
+        color: var(--blue-1) !important;
+        font-size: var(--medium) !important;
+        font-weight: var(--font-semibold) !important;
+        // padding: 0px 20px !important;
+        max-width: unset !important;
+        overflow-wrap: unset !important;
+      }
+      .tableTd{
+        font-size:var(--small) !important;
+      }
+      .lastTd{
+        text-align: start !important;
+      }
+      .searchFilterContainer {
+        margin-top: 30px;
+        padding: 20px;
+        // height: 94px;
+        background: var(--white-4);
+        border-radius: var(--border-radius);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .dropdownBody{
+          z-index: 1;
+        }
+      }
+      .tabTableContainer{
+        margin-top: 30px;
+      }
+      .activeTab{
+        width: 92px !important;
+      }
+      .activeTabName
+      {
+        margin-left: unset !important;
+      }
+}
+@media only screen and (min-width: 768px) {
+    .myTransactionContainer {
+      width: 80%;
+      margin: 7.5% auto 50px auto;
+      .searchFilterContainer{
+          .dropdownContainer{
+            width: 180px;
+          }
+      }
+    }
+  }

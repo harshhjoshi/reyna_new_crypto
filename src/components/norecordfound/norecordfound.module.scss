@@ -1,0 +1,10 @@
+.norecordFoundContainer{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    .norecordFoundText{
+        color: var(--grey-1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+    }
+}

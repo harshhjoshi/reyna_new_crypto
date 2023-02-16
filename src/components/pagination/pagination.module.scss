@@ -1,0 +1,103 @@
+.paginationContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 100%;
+    background: var(--white-10);
+    border-radius: var( --border-radius);
+    padding: 12px 24px;
+    // flex-wrap: wrap;
+   
+    .pageRange{
+        color: var(--grey-2);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+    }
+    .paginationPagesContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .previousBtn{
+            display: flex;
+            flex-direction: row;
+            width: 124px;
+            color: var(--blue7);
+            border: 1px solid var(--black-2);
+            padding: 9px 18px 6px 5px;
+            background: var(--white-10);
+            justify-content: center;
+            border-radius:6px 0px 0px 6px;
+            user-select: none;
+        }
+        .nextBtn{
+            display: flex;
+            flex-direction: row-reverse;
+            color: var(--blue7);
+            width: 124px;
+            border: 1px solid var(--black-2);
+            padding: 9px 5px 6px 0px;
+            background: var(--white-10);
+            justify-content: center;
+            border-radius:0px 6px 6px 0px;
+            user-select: none;
+        }
+        .titlePrevious{
+            color: var(--grey-2);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            margin-left:10px;
+        }
+        .titleNext{
+            color: var(--grey-2);
+            font-size: var(--small);
+            font-weight: var(--font-medium);
+            margin-right:10px;
+        }
+        .paginationScroll{
+            max-width: 160px;
+            // display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            &::-webkit-scrollbar {
+                display: none;
+              }
+              -ms-overflow-style: none; 
+              scrollbar-width: none;
+              padding: 9px 0px;
+            .pageNumber{
+                color: var(--blue-1);
+                padding: 7px 15px;
+                border-top: 1px solid var(--black-2);
+                border-bottom: 1px solid var(--black-2);
+                cursor: pointer;
+                background:var(--white-1);
+                // text-align: center;
+                // display: block;
+                // width: 40px !important;
+            }
+            .activePage{
+                padding: 7px 15px;
+                border-top: 1px solid var(--black-2);
+                border-bottom: 1px solid var(--black-2);
+                cursor: pointer;
+                background-color: var(--blue-1);
+                color: var(--white-1);
+                // text-align: center;
+                // display: block;
+                // width: 40px !important;
+            }
+        }
+    }
+   }
+@media only screen and (min-width: 768px) { 
+    .paginationContainer{
+        padding: 12px 24px;
+        .paginationPagesContainer{
+            width: unset;
+            justify-content: center;
+        }
+    }
+}

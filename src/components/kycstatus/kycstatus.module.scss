@@ -1,0 +1,52 @@
+// .KYCStatusContainer{
+//     margin-right: 50px;
+//     color: var(--white-1);
+//     display: flex;
+//     .scanButton{
+//         width: 44px;
+//         background: var(--yellow-1);
+//         border: 2px solid var(--yellow-1);
+//     }
+//     .kycStatusTextContainer{
+//         display: flex;
+//         flex-direction: column;
+//         margin-left: 10px;
+//         .kycStatusText{
+//             color: var(--white-1);
+//             font-size: var(--x-large);
+//             font-weight: var(--font-semibold);
+//         }
+//         .status{
+//             color: var(--yellow-1);
+//             font-size: var(--small);
+//             font-weight: var(--font-bold);
+//         }   
+//     }
+// }
+@media only screen and (min-width: 768px) {
+    .KYCStatusContainer{
+        margin-right: 50px;
+        color: var(--white-1);
+        display: flex;
+        .scanButton{
+            width: 44px;
+            background: var(--yellow-1);
+            border: 2px solid var(--yellow-1);
+        }
+        .kycStatusTextContainer{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            .kycStatusText{
+                color: var(--white-1);
+                font-size: var(--x-large);
+                font-weight: var(--font-semibold);
+            }
+            .status{
+                color: var(--yellow-1);
+                font-size: var(--small);
+                font-weight: var(--font-bold);
+            }   
+        }
+    }
+}

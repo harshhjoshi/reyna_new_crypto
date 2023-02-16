@@ -1,0 +1,28 @@
+.list{
+    padding-inline-start: 20px;
+    margin-block-start: 5px;
+    margin-block-end: 0px;
+    .listItem{
+        color: var(--blue-5);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+    }
+}
+.listDeactive{
+    padding-inline-start: 20px;
+    margin-block-start: 5px;
+    margin-block-end: 0px;
+    .listItem{
+        color: var(--grey-4);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .list{
+        margin-block-start: 10px;
+    }
+    .listDeactive{
+        margin-block-start: 10px;
+    }
+}

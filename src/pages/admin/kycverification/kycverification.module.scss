@@ -1,0 +1,59 @@
+
+.kycVerificationContainer {
+    min-height: 100%;
+    width: 90%;
+    margin: 30% auto 50px auto;
+    // overflow-y: hidden;
+    .spinner{
+      margin: 30% auto 0% auto !important;
+    }
+    .kycVerificationTitle {
+      color: var(--blue-1);
+      font-size: var(--xxxx-large);
+      font-weight: var(--font-bold);
+    }
+    .requiredDocumentText {
+      margin-top: 5px;
+      color: var(--blue-1);
+      font-size: var(--medium);
+      font-weight: var(--font-semibold);
+    }
+    .divider {
+      margin-top: 30px;
+      width: 100%;
+      background: var(--white-2);
+      height: 2px;
+    }
+    .searchFilterContainer {
+      margin-top: 30px;
+      padding: 20px;
+      // height: 94px;
+      background: var(--white-4);
+      border-radius: var(--border-radius);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .dropdownbody{
+        z-index: 9 !important;
+      }
+    }
+    // .tableContainer {
+    //   margin-top: 30px;
+    //   // margin-bottom: 20px;
+    // }
+  }
+@media only screen and (min-width: 768px) {
+ 
+  .kycVerificationContainer {
+    // min-height: 100%;
+    width: 80%;
+    margin: 7.5% auto 50px auto;
+    .spinner{
+      margin: 7.5% auto 0% auto !important;
+    }
+    .tableContainer {
+      margin-top: 30px;
+      // margin-bottom: 20px;
+    }
+  }
+}

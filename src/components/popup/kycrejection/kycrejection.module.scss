@@ -1,0 +1,111 @@
+.kycRejectionContainer{
+    width: 95%;
+    background: var(--white-1);
+    min-height: 100%;
+    overflow-y: auto;
+    border-radius: var(--border-radius);
+    .kycRejectionFomContainer{
+        width: 95%;
+        margin: 5% auto 5% auto;
+        .kycRejection{
+            color: var(--blue-1);
+            font-size: var(--xxxx-large);
+            font-weight: var(--font-bold);
+        }
+        .divider{
+            margin-top: 25px;
+            height: 2px;
+            background: var(--white-2);
+            width: 100%;
+        }
+        .kycRejectionMessageContainer{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            .rejectionMessage{
+                margin-left: 20px;
+                color: var(--blue-5);
+                font-size: var(--x-large);
+                font-weight: var(--font-semibold);
+            }
+        }
+        .rejectedDocuments{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-row-gap: 15px;
+            .rejectedDocButton{
+                width: unset;
+                // flex: 1;
+                grid-auto-flow: row;
+                margin-right: 15px;
+                padding: 10px;
+            }
+            .approvedDocButton{
+                width: unset;
+                // flex:1;
+                margin-right: 15px;
+                padding:10px;
+                background: var(--white-1);
+                border: 2px solid var(--grey-3);
+                .approvedDocTitle{
+                    font-weight: var(--font-normal);
+                }
+            }
+        }
+        .kycRejectionForm{
+            margin-top: 30px;
+            .formField{
+                display: flex;
+                flex-direction: column;
+                .label{
+                    color: var(--blue-5);
+                    font-size: var(--small);
+                    font-weight: var(--font-medium);
+                }
+                .textAreaField{
+                    margin-top: 10px;
+                    border: var(--border);
+                    border-radius: 6px;
+                    padding: 11px;
+                    color: var(--blue-5);
+                    &::placeholder {
+                        color: var(--grey-1);
+                        font-size: var(--small);
+                        font-weight: var(font-medium);
+                        margin: 5px;
+                      }
+                }
+                .error{
+                    color: var(--red-1);
+                    font-size: var(--x-small);
+                    font-weight: var(--font-normal);
+                    margin-top: 10px;
+                  }
+            }
+            .buttonsFlex{
+                margin-top: 30px;
+                display: flex;
+                .submitButton{
+                    // width: 50%;  
+                    flex: 1;
+                }
+                .cancelButton{
+                    flex: 1;
+                    width: 50%;
+                    background: var(--grey-3);
+                    margin-left: 15px;
+                    border: 2px solid var(--grey-3);
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .kycRejectionContainer{
+        width: 50%;
+        .kycRejectionFomContainer{
+            width: 80%;
+        }
+    }
+}

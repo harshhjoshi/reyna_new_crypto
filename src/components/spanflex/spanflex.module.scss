@@ -1,0 +1,17 @@
+.spanFlexContainer{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    min-width: 80px;
+    flex: 1;
+    .spanFlexLabel{
+        color: var(--blue-1);
+        font-size: var(--medium);
+        font-weight: var(--font-bold);
+    }
+    .spanFlexValue{
+        color: var(--grey-6);
+        font-weight: var(--font-medium);
+        font-size: var(--small);
+    }
+}

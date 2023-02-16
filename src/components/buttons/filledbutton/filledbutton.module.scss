@@ -1,0 +1,23 @@
+.button {
+  background: var(--orange-1);
+  border-radius: 30px;
+  width: 160px;
+  padding: 5px 0px;
+  border: 3px solid var(--orange-1);
+  cursor: pointer;
+  .title {
+    color: var(--blue-1);
+    font-size: var(--small);
+    font-weight: var(--font-semibold);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .button {
+    width: 194px;
+    padding: 13px 0px;
+    .title {
+      font-size: var(--small);
+      color: white;
+    }
+  }
+}

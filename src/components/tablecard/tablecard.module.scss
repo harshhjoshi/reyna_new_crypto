@@ -1,0 +1,82 @@
+@mixin sizeWeight($color) {
+    color:$color ;
+    font-size: var(--small);
+    font-weight: var(--font-bold);
+}
+.tableCardContainer{
+    margin-top: 30px;
+    background: var(--white-4);
+    border-radius:var(--border-radius);
+    padding: 20px;
+    min-width: fit-content;
+    .tableCardDataContainer{
+        display: flex;
+        // justify-content: space-between;
+        .userNameContainer{
+            display: flex;
+            flex-direction: column;
+            // margin-right: 20px;
+            flex: 1;
+            .userNameLable{
+                color: var(--blue-1);
+                font-size: var(--medium);
+                font-weight: var(--font-semibold);
+            }
+            .userNameText{
+                color: var(--blue-5);
+                font-size: var(--small);
+                font-weight: var( --font-medium);
+            }
+        }
+        .statusContainer{  
+            display: flex;
+            flex-direction: column;
+            // margin-right: 20px;
+            flex: 1;
+            .statusLabel{
+                color: var(--blue-1);
+                font-size: var(--medium);
+                font-weight: var(--font-semibold);
+            }
+            .inReviewStatus{
+                @include sizeWeight(var(--blue-1));
+            }
+            .rejectStatus{
+                @include sizeWeight(var(--pink-1));
+            }
+            .approveStatus{
+                @include sizeWeight(var(--green-1));
+            }
+            .pendingStatus{
+                @include sizeWeight(var(--yellow-1));
+            }
+            .submittedStatus{
+                @include sizeWeight(var(--purple-1));
+            }
+        }
+        .button{
+            width: 40px;
+            height: 40px;
+            background: var(--white-5);
+            border: var(--border);
+            border-radius: 6px;
+            margin-right: 10px;
+            &:last-of-type{
+                margin-right: 0px;
+            }
+        }
+    }
+    .mainDataContainer{
+        margin-top: 20px;
+        .divider{
+            background: var(--grey-5);
+            width: 100%;
+        }
+        .documentListContainer{
+            .documentList{
+                display: flex;
+                margin-top: 20px;
+            }
+        }
+    }
+}

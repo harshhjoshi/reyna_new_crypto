@@ -1,0 +1,303 @@
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  .signupFormContainer {
+    background: var(--white-1);
+    border-radius: var(--border-radius);
+    width: 80%;
+    margin: 10% 0% 10% 0%;
+    .signUpForm {
+      width: 100%;
+      .signUpText {
+        color: var(--blue-1);
+        font-size: var(--xxxx-large);
+        font-weight: var(--font-bold);
+        margin-top: 10px;
+      }
+      .signUpTitle {
+        color: var(--blue-1);
+        font-size: var(--medium);
+        font-weight: var(--font-semibold);
+        margin-top: 10px;
+      }
+      .divider {
+        height: 2px;
+        background: var(--white-2);
+        width: 100%;
+        margin-top: 15px;
+      }
+      .signUpFormBody {
+        .error{
+          color: var(--red-1);
+          font-size: var(--x-small);
+          font-weight: var(--font-normal);
+          margin-top: 10px;
+        }
+        .info{
+          margin-top: 5px;
+          margin-left: 5px;
+          color: var(--grey-1);
+          font-size: var(--x-small);
+          font-weight: var(--font-normal);
+        }
+        .uploadPhotoContainer {
+          margin-top: 25px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: center;
+          flex-direction: column;
+          .uploadPhotoLeft {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .cameraCircle {
+              border: var(--border);
+              border-radius: 50%;
+              width: 80px;
+              height: 80px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              .profileImage{
+                display: inline-block;
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+              }
+            }
+            .cameraCircleRed {
+              border: var(--border-1);
+              border-radius: 50%;
+              width: 80px;
+              height: 80px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              .profileImage{
+                display: inline-block;
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+              }
+            }
+            .profilePicture {
+              color: var(--blue-5);
+              font-size: var(--small);
+              font-weight: var(--font-semibold);
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .formFieldsContainer {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 5px;
+          flex-direction: column;
+          // flex-wrap: wrap;
+          .formFields {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            position: relative;
+            margin-top: 5px;
+            .label {
+              color: var(--blue-5);
+              font-size: var(--small);
+              font-weight: var(--font-medium);
+              line-height: 30px;
+            }
+            .inputField {
+              border: var(--border);
+              border-radius: 6px;
+              height: 35px;
+              padding-left: 10px;
+              width: 100%;
+              color: var(--blue-5);
+              // flex: 1;
+              &::placeholder {
+                color: var(--grey-1);
+                font-size: var(--small);
+                font-weight: var(--font-normal);
+                margin: 5px;
+              }
+            }
+            .selectField {
+              border: var(--border);
+              border-radius: 6px;
+              height: 39px;
+              padding-left: 10px;
+              width: calc(100% + 12px);
+              color: var(--blue-5);
+              .optionField{
+                border: var(--border);
+              }
+            }
+            .error{
+              color: var(--red-1);
+              font-size: var(--x-small);
+              font-weight: var(--font-normal);
+            }
+           
+            .view {
+              position: absolute;
+              top: 38px;
+              right: 0px;
+              user-select: none;
+              cursor: pointer;
+            }
+            .expandIcon {
+              position: absolute;
+              top: 38px;
+              right: 0px;
+              user-select: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .termsPolicy {
+          display: flex;
+          margin-top: 35px;
+          align-items: flex-start;
+          .checkbox {
+            border: var(--border);
+            border-radius: 2px;
+            cursor: pointer;
+            outline: none;
+          }
+          .termsPolicyContent {
+            color: var(--grey-2);
+            font-size: var(--small);
+            font-weight: var(--font-normal);
+            margin-left: 8px;
+            .privacyHyperlink{
+              color: var(--grey-2);
+              font-size: var(--small);
+              font-weight: var(--font-semibold);
+              margin-left: 2px;
+              text-decoration: underline;
+              text-decoration-color:var(--grey-2);
+              cursor: pointer;
+            }
+          }
+        }
+        .buttonContainer {
+          margin-top: 25px;
+          display: flex;
+          .resetButton {
+            width: 148px;
+            background: var(--grey-3);
+            border: 2px solid var(--grey-3);
+            margin-left: 20px;
+          }
+          .resetButtonText{
+              color: var(--blue-5);
+          }
+        }
+      }
+      .hasAccount {
+        margin-top: 20px;
+        .hasAccountText {
+          color: var(--grey-2);
+          font-size: var(--small);
+          font-weight: var(--font-semibold);
+        }
+        .signin {
+          color: var(--blue-1);
+          font-size: var(--small);
+          font-weight: var(--font-semibold);
+          margin-left: 2px;
+          text-decoration: underline;
+          text-decoration-color:var(--blue-5) ;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .signupContainer {
+    background-image: url('../../assets/images/ArrowFrameBlue.png');
+    background-color: var(--blue-1);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+    // min-height:100vh;
+    // height: 100vh;
+    // min-height: fit-content;
+    .signupFormContainer {
+      box-shadow: var(--box-shadow);
+      width: 55%;
+      // height: 100vh;
+      // padding: 78px 0px 78px 0px;
+      .signUpForm {
+        width: 80%;
+        margin: 10% auto 10% auto;
+        .signUpText {
+          margin-top: 15px;
+        }
+        .divider {
+          margin-top: 20px;
+        }
+        .signUpFormBody {
+          .uploadPhotoContainer {
+            flex-direction: row;
+            .uploadPhotoLeft {
+              flex-direction: row;
+              .cameraCircle {
+                margin-right: 22px;
+              }
+              .cameraCircleRed {
+                margin-right: 22px;
+              }
+              .profilePicture {
+                margin-top: unset;
+                margin-bottom: unset;
+              }
+            }
+          }
+          .formFieldsContainer {
+            margin-top: 30px;
+            flex-direction: row;
+            // flex-wrap: wrap;
+            .formFields {
+              width: 48%;
+              margin-top: unset;
+              .inputField {
+                height: 48px;
+                width: unset;
+                // flex: 1;
+                &::placeholder {
+                  font-size: var(--small);
+                  font-weight: var(--font-medium);
+                }
+              }
+              .selectField {
+                height: 52px;
+                width: unset
+              }
+              .view {
+                top: 45px;
+                right: 14px;
+              }
+              .expandIcon {
+                top: 45px;
+                right: 14px;
+              }
+            }
+          }
+          .buttonContainer {
+            .resetButton {
+              width: 148px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

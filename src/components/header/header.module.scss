@@ -1,0 +1,144 @@
+.headerContainer {
+  background: var(--blue-1);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12.5px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  .headerLeft {
+    display: flex;
+    align-items: center;
+    .menuIcon {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    .closeButton {
+      margin-right: 8px;
+      background: var(--blue-1);
+      border: 1px solid var(--blue-2);
+      width: 49px;
+      height: 45px;
+    }
+    .logo {
+      display: inline-block;
+      width: 32px;
+      height: 40px;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+  .headerRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    .statusButton {
+      margin-right: 10px;
+      width: 44px;
+      background: var(--yellow-1);
+      border: 2px solid var(--yellow-1);
+    }
+    .statusText {
+      color: var(--blue-1);
+      font-weight: var(--font-bold);
+      font-size: var(--x-large);
+    }
+    .searchButton {
+      margin-right: 10px;
+      width: 44px;
+    }
+    .signinButton {
+      margin-right: 10px;
+      width: 44px;
+    }
+    .signupButton {
+      background: var(--blue-3);
+      border: 2px solid var(--blue-3);
+      width: 44px;
+    }
+    .userButton {
+      // background: var(--blue-3);
+      // border: 2px solid var(--blue-3);
+      width: 44px;
+      user-select: none;
+    }
+    .addressButton {
+      // background: var(--blue-3);
+      // border: 2px solid var(--blue-3);
+      margin-right: 10px;
+      width: 44px;
+      user-select: none;
+    }
+    .toolTipContainer {
+      right: -5px;
+      width: auto;
+      top: 60px;
+      flex-direction: row;
+      align-items: center;
+      & ::before {
+        right: 70px;
+      }
+    }
+    .toolTipTitle {
+      color: var(--yellow-1);
+      margin-right: 15px;
+      font-size: var(--x-small);
+    }
+    .tooltipSubtitle {
+      cursor: pointer;
+    }
+    .dropdownConainer {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+    .dropdownBody {
+      top: 57px;
+      right: -11px;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .headerContainer {
+    height: 61px;
+    padding: 0px 10px;
+    .headerLeft {
+      .menuIcon {
+        margin-right: 13px;
+      }
+      .closeButton {
+        margin-right: 13px;
+        width: 49px;
+        height: 45px;
+      }
+    }
+    .headerRight {
+      .signinButton {
+        width: 74px;
+      }
+      .signupButton {
+        width: 74px;
+      }
+      .dropdownBody {
+        top: 53px;
+      }
+      .toolTipContainer {
+        right: 50px;
+        top: 55px;
+        & ::before {
+          right: 20px;
+        }
+      }
+      .toolTipTitle {
+        font-size: var(--small);
+      }
+    }
+  }
+}

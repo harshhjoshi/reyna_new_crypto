@@ -1,0 +1,24 @@
+// @media only screen and (min-width: 768px) {
+    .statusButton{
+        width: 88px;
+        background: var(--white-6);
+        border-radius: var(--border-radius-2);
+        color: var(--blue-1);
+        font-size: var(--small);
+        font-weight: var(--font-bold);
+        border: 1px solid var(--white-6);
+        padding: 6px;
+        // position: relative;
+        // z-index: -23;
+        .tooltip{
+            width: 160px;
+            // padding: 12px 12px;
+        }
+        .tooltipTitle{
+            margin-top: 5px;
+            color: var(--white-1);
+            font-weight: var(--font-bold);
+            font-size: var(--small);
+        }
+    }
+// }

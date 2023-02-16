@@ -1,0 +1,20 @@
+.gainersContainer{
+    .dataContainer{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        .spinner{
+            padding: 10px;
+        }
+    }
+    .tableHead{
+        padding: 0px 20px !important;
+        max-width: unset;
+        overflow-wrap: unset;
+    }
+    .tableTd{
+        padding:0px 20px !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+}

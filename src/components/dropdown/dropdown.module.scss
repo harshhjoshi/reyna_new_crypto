@@ -1,0 +1,102 @@
+.dropdownContainer {
+  position: relative;
+  .dropdownHead {
+    border: var(--border);
+    border-radius: 6px;
+    height: 35px;
+    padding-left: 10px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    // flex: 1;
+    .dropdownTitle {
+      color: var(--blue-5);
+      font-size: var(--small);
+      font-weight: var(--font-medium);
+    }
+    .expandIcon {
+      position: absolute;
+      top: 8px;
+      right: 0px;
+    }
+  }
+  .dropdownOpen {
+    border: var(--border);
+    // border-bottom: none;
+    border-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 35px;
+    padding-left: 10px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    // flex: 1;
+    .dropdownTitle {
+      color: var(--blue-5);
+      font-size: var(--small);
+      font-weight: var(--font-medium);
+    }
+    .expandIcon {
+      position: absolute;
+      top: 8px;
+      right: 0px;
+    }
+  }
+  .dropdownBody {
+    position: absolute;
+    background: var(--white-1);
+    border: var(--border);
+    border-radius: 6px;
+    width: 100%;
+    z-index: 10;
+    padding-left: 10px;
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    // transform: translateY(48px);
+    // transition: transform 3000ms linear;
+    .dropdownItem {
+      color: var(--blue-5);
+      font-size: var(--small);
+      font-weight: var(--font-medium);
+      cursor: pointer;
+      margin: 5px 10px;
+    }
+    .activeDropdownItem {
+      color: var(--yellow-1);
+      font-size: var(--small);
+      font-weight: var(--font-medium);
+      cursor: pointer;
+      margin: 5px 10px;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .dropdownContainer {
+    .dropdownHead {
+      height: 48px;
+      width: unset;
+      .expandIcon {
+        top: 13px;
+        right: 12px;
+      }
+    }
+    .dropdownOpen {
+      height: 48px;
+      width: unset;
+      .expandIcon {
+        top: 13px;
+        right: 12px;
+      }
+    }
+    .dropdownBody {
+      width: 99%;
+      padding-left: unset;
+    }
+  }
+}

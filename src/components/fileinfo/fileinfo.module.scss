@@ -1,0 +1,41 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--blue-6);
+  border-radius: var(--border-radius);
+  padding: 12.5px 20px;
+  // width: 100%;
+  margin-top: 25px;
+  .fileInfoContainer {
+    display: flex;
+    align-items: center;
+    .fileNameSize {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      .fileName {
+        color: var(--blue-1);
+        font-size: var(--small);
+        font-weight: var(--font-bold);
+      }
+      .fileSize {
+        color: var(--blue-1);
+        font-size: var(--xx-small);
+        font-weight: var(--font-medium);
+      }
+    }
+  }
+  .failIcon {
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    .fileInfoContainer {
+      .fileNameSize {
+        margin-left: 15px;
+      }
+    }
+  }
+}

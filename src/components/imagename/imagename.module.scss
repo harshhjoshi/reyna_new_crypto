@@ -1,0 +1,12 @@
+.coinNameImageContainer{
+    display: flex;
+    align-items: center;
+    .imageContainer{
+        margin-right: 10px;
+        .coinImage{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+        }
+    }
+}

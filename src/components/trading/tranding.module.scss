@@ -1,0 +1,67 @@
+.trandingContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  background: var(--blue-1);
+  border-radius: 6px;
+  padding: 15px;
+  // justify-content: center;
+  min-width: fit-content;
+  // width: 195px;
+  flex: 1;
+  // min-width: fit-content;
+  .coinIcon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+  }
+  .tradingDetails {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    .tradingName {
+      color: var(--white-1);
+      font-size: var(--medium);
+      font-weight: var(--font-bold);
+    }
+    .tradingPricePercentage {
+      .price {
+        color: var(--white-1);
+        font-size: var(--x-small);
+        font-weight: var(--font-semibold);
+      }
+      .percentage {
+        margin-left: 10px;
+        color: var(--green-2);
+        font-size: var(--x-small);
+        font-weight: var(--font-bold);
+      }
+      .percentageRed {
+        margin-left: 10px;
+        color: var(--red-1);
+        font-size: var(--x-small);
+        font-weight: var(--font-bold);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .trandingContainer {
+    .tradingDetails {
+      .tradingName {
+        font-size: var(--x-large);
+      }
+      .tradingPricePercentage {
+        .price {
+          font-size: var(--small);
+        }
+        .percentage {
+          font-size: var(--small);
+        }
+        .percentageRed {
+          font-size: var(--small);
+        }
+      }
+    }
+  }
+}

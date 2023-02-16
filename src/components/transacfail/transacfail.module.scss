@@ -1,0 +1,59 @@
+.transacFailContainer {
+    width: 95%;
+    background: var(--white-1);
+    min-height: 100%;
+    overflow-y: auto;
+    border-radius: var(--border-radius);
+    .transacFailContent{
+        width: 90%;
+        margin: 5% auto 5% auto;
+        .transacFailMessageContainer{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+             .transactionMessageId{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                text-align: center;
+                align-items: center;
+                .transacFailMessage{
+                    color: var(--blue-5);
+                    font-size: var(--x-large);
+                    font-weight: var( --font-semibold);
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        .divider {
+            margin-top: 25px;
+            height: 2px;
+            background: var(--white-2);
+            width: 100%;
+          }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .transacFailContainer {
+      width: 50%;
+      .transacFailContent{
+        width: 80%;
+        .transacFailMessageContainer{
+            flex-direction: row;
+             .transactionMessageId{
+                margin-left: 20px;
+                margin-top: unset;
+                text-align: unset;
+                align-items: unset;
+                .transacFailMessage{
+                    margin-left: 20px;
+                    margin-top: unset;
+                    text-align: unset;
+                }
+            }
+        }
+      }
+    }
+  }
+  

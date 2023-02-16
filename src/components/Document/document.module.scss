@@ -1,0 +1,53 @@
+.documentsList{
+    display: flex;
+    flex:1;
+    .numberContainer{
+        height: 29px;
+        width: 29px;
+        .number{
+            color: var(--blue-1);
+            font-size: var(--small);
+        }
+    }
+    .documentNamePath{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 110px;
+        // max-width: 110px;
+        overflow-wrap: break-word;
+        flex:1;
+        .docType{
+            color: var(--blue-1);
+            font-weight: var(--font-semibold);
+            font-size: var(--medium);
+            white-space: nowrap
+            // flex: 1;
+        }
+        .doc{
+            margin-top: 5px;
+            color: var(--blue-5);
+            font-weight: var(--font-medium);
+            font-size: var(--small);
+            cursor: pointer;
+        }
+        .subType{
+            margin-top: 5px;
+            color: var(--blue-5);
+            font-weight: var(--font-medium);
+            font-size: var(--xx-small);
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 22px;
+            height: 22px;
+            margin-left: 10px;
+            cursor: pointer;
+            background: var(--grey-3);
+            // .copyIcon{
+            // }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.pageNotFoundContainer{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .errorText{
+        margin-top: 50px;
+        color: var(--blue-1);
+        font-size: var(--larger);
+        font-weight: var(--font-bold);
+        text-align: center;
+    }
+    .notFoundText{
+        margin-top:25px;
+        color: var(--blue-1);
+        font-size: var(--x-large);
+        font-weight: var(--font-semibold);
+        text-align: center;
+    }
+    .backtohomeLink{
+        color: var(--yellow-1);
+        font-size: var(--x-large);
+        font-weight: var(--font-semibold);
+        text-decoration: underline;
+        text-decoration-color:  var(--yellow-1);
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .pageNotFoundContainer{
+        .errorText{
+            font-size: var(--largest);
+        }
+        .notFoundText{
+            font-size: var(--xxx-large);
+        }
+        .backtohomeLink{
+            font-size: var(--xxx-large);
+        }
+    }
+}

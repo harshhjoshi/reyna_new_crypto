@@ -1,0 +1,132 @@
+@media only screen and (min-width: 768px) {
+    .tableContainer {
+      width: 100%;
+      .table {
+        width: 100%;
+        height: 100%;
+        .tableHead {
+          height: 50px;
+          color: var(--blue-1);
+          font-size: var(--medium);
+          font-weight: var(--font-semibold);
+          text-align: left;
+          padding: 0px 5px;
+          border-bottom: 1px solid var(--white-2);
+        }
+  
+        .tableRow {
+          height: 40px;
+          font-size: var(--small);
+          font-weight: var(--font-medium);
+          color: var(--blue-5);
+          cursor: pointer;
+          .tableRowData {
+            padding: 8px 5px;
+            max-width: 115px;
+            border-bottom: 1px solid var(--white-2);
+            margin-top: 10px;
+            position: relative;
+            overflow-wrap: break-word;
+            .addressText{
+                color: var(--blue-5);
+                font-weight: var(--font-medium);
+                font-size: var(--medium);
+                position: relative;
+            }
+            .button{
+                width: 40px;
+                height: 40px;
+                background: var(--white-5);
+                border: var(--border);
+                border-radius: 6px;
+                // margin-right: 10px;
+                &:last-of-type{
+                    margin-left: 10px;
+                }
+            }
+            .inReviewButton{
+                background: var(--white-6);
+                color: var(--blue-1);
+                border: 1px solid var(--white-6);
+            }
+            .rejectButton{
+                background: var(--white-7);
+                color:  var(--pink-1);
+                border: 1px solid var(--white-7);
+            }
+            .approveButton{
+                background: var(--green-1);
+                color: var(--white-1);
+                border: 1px solid  var(--green-1);
+            }
+            .pendingButton{
+                background: var(--white-8);
+                color: var(--yellow-1);
+                border: 1px solid var(--white-8);
+            }
+            .submittedButton{
+              background: var(--white-9);
+              color: var(--purple-1);
+              border: 1px solid var(--white-9);
+            }
+          }
+          .tableRowDataDoc {
+            padding: 8px 5px;
+            max-width: 115px;
+            border-bottom: 1px solid var(--white-2);
+            margin-top: 10px;
+            position: relative;
+            overflow-wrap: break-word;
+            font-size: var(--small);
+            font-weight: var(--font-semibold);
+            color: var(--blue-5);
+            .addressText{
+                color: var(--blue-5);
+                font-weight: var(--font-medium);
+                font-size: var(--medium);
+                position: relative;
+            }
+            .button{
+                width: 40px;
+                height: 40px;
+                background: var(--white-5);
+                border: var(--border);
+                border-radius: 6px;
+                // margin-right: 10px;
+                &:last-of-type{
+                    margin-left: 10px;
+                }
+            }
+            .inReviewButton{
+                background: var(--white-6);
+                color: var(--blue-1);
+                border: 1px solid var(--white-6);
+            }
+            .rejectButton{
+                background: var(--white-7);
+                color:  var(--pink-1);
+                border: 1px solid var(--white-7);
+            }
+            .approveButton{
+                background: var(--green-1);
+                color: var(--white-1);
+                border: 1px solid  var(--green-1);
+            }
+            .pendingButton{
+                background: var(--white-8);
+                color: var(--yellow-1);
+                border: 1px solid var(--white-8);
+            }
+            .submittedButton{
+              background: var(--white-9);
+              color: var(--purple-1);
+              border: 1px solid var(--white-9);
+            }
+          }
+          &:hover{
+            background: var(--white-4);
+          }
+        }
+      }
+    }
+  }

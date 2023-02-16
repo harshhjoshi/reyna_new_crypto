@@ -1,0 +1,191 @@
+.tableContainer {
+  width: 100%;
+  .table {
+    width: 100%;
+    // height: 100%;
+    max-height: 300px;
+    overflow: auto;
+    .tableHeadRow {
+      height: 40px;
+      background: var(--white-4);
+      border-radius: var(--border-radius);
+      .dropdownContainer {
+        width: 110px;
+        position: relative;
+        background: var(--white-10);
+        padding: 0px 10px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dropdownTitle {
+        color: var(--grey-6);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+      }
+    }
+    .tableHead {
+      max-width: 0px;
+      overflow-wrap: break-word;
+      color: var(--grey-6);
+      font-size: var(--small);
+      font-weight: var(--font-medium);
+      text-align: left;
+      padding: 0px 5px;
+      border-bottom: 1px solid var(--white-10);
+      &:first-child {
+        border-top-left-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+      }
+      &:last-child {
+        border-bottom-right-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+      }
+    }
+    .tableRow {
+      height: 53px;
+      // cursor: pointer;
+      .tableRowData {
+        padding: 8px 5px;
+        max-width: 115px;
+        border-bottom: 1px solid var(--white-10);
+        margin-top: 10px;
+        position: relative;
+        overflow-wrap: break-word;
+        font-size: var(--medium);
+        font-weight: var(--font-medium);
+        color: var(--blue-5);
+        .imageData {
+          display: flex;
+          align-items: center;
+          // flex-wrap: wrap;
+          .coinImage {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            // object-fit: cover;
+            margin-right: 5px;
+          }
+          .symbol {
+            margin-left: 5px;
+            color: var(--grey-6);
+            font-weight: var(--font-medium);
+            font-size: var(--small);
+          }
+        }
+      }
+      .lastTableRowData {
+        padding: 8px 5px;
+        max-width: 115px;
+        border-bottom: 1px solid var(--white-10);
+        margin-top: 10px;
+        position: relative;
+        overflow-wrap: break-word;
+        font-size: var(--medium);
+        font-weight: var(--font-medium);
+        color: var(--blue-5);
+        text-align: center;
+        .addressCopyContainer {
+          display: flex;
+          align-items: center;
+          border-radius: 2px;
+          .copyContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 22px;
+            height: 22px;
+            margin-left: 10px;
+            cursor: pointer;
+            background: var(--grey-3);
+            // .copyIcon{
+            // }
+          }
+        }
+        .buysellButtons {
+          display: flex;
+          align-items: center;
+
+          .buyButton {
+            width: 90px;
+            // padding: 5px;
+            margin-left: 12px;
+            padding: 4.5px;
+          }
+          .sellButton {
+            background: var(--white-1);
+            border: 2px solid var(--orange-1);
+            width: 90px;
+            padding: 5.5px;
+          }
+          .sellText {
+            color: var(--black-3);
+          }
+        }
+      }
+      .tableRowDataPositive {
+        padding: 8px 5px;
+        max-width: 115px;
+        border-bottom: 1px solid var(--white-10);
+        margin-top: 10px;
+        position: relative;
+        overflow-wrap: break-word;
+        font-size: var(--medium);
+        font-weight: var(--font-medium);
+        color: var(--green-2);
+        // text-align: center;
+      }
+      .tableRowDataNegative {
+        padding: 8px 5px;
+        max-width: 115px;
+        border-bottom: 1px solid var(--white-10);
+        margin-top: 10px;
+        position: relative;
+        overflow-wrap: break-word;
+        font-size: var(--medium);
+        font-weight: var(--font-medium);
+        color: var(--red-1);
+        // text-align: center;
+      }
+      // &:hover{
+      //   background: var(--white-4);
+      // }
+      .inReviewButton {
+        background: var(--white-6);
+        color: var(--blue-1);
+        border: 1px solid var(--white-6);
+        width: 125px;
+      }
+      .rejectButton {
+        background: var(--white-7);
+        color: var(--pink-1);
+        border: 1px solid var(--white-7);
+        width: 125px;
+      }
+      .approveButton {
+        background: var(--green-1);
+        color: var(--white-1);
+        border: 1px solid var(--green-1);
+        width: 125px;
+      }
+      .pendingButton {
+        background: var(--white-8);
+        color: var(--yellow-1);
+        border: 1px solid var(--white-8);
+        width: 125px;
+      }
+      .submittedButton {
+        background: var(--white-9);
+        color: var(--purple-1);
+        border: 1px solid var(--white-9);
+        width: 125px;
+      }
+    }
+  }
+  .spinner {
+    // background: var(--blue-5);
+    padding: 10px;
+    width: 100%;
+  }
+}

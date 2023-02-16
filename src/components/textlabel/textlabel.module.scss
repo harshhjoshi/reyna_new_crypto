@@ -1,0 +1,38 @@
+.textLabelContainer{
+    display: flex;
+    flex-direction: column;
+    // width;
+    // margin-right: 15px;
+    flex: 1;
+    margin-top: 30px;
+    .labelText{
+        color: var(--blue-5);
+        font-size: var(--small);
+        font-weight: var(--font-medium);
+    }
+    .textLabelBox{
+        border: var(--border);
+        border-radius: 6px;
+        padding: 15px 0px 15px 15px;
+        min-width: fit-content;
+        flex: 1;
+        margin-top: 5px;
+        max-height: 52px;
+        .textLabelAddress{
+            color: var(--blue-1);
+            font-size: var(--medium);
+            font-weight: var(--font-normal);
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .textLabelContainer{
+        margin-right: 15px;
+        .textLabelBox{
+            padding: 15px 0px 15px 15px;
+            width: 95%;
+            min-width: unset;
+        }
+    }
+
+}
